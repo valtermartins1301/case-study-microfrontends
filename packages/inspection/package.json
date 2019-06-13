@@ -11,10 +11,10 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server --config ./webpack.config.js --env.standalone",
+    "start:single-spa": "webpack-dev-server --config ./webpack.config.js --port 8003",
+    "build": "webpack -p --config webpack.config.js --env.analyze=static",
+    "analyze": "webpack --config webpack.config.js --env.analyze=server"
   },
   "eslintConfig": {
     "extends": "react-app"
