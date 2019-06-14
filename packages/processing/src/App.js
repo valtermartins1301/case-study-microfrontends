@@ -1,3 +1,4 @@
+import {navigateToUrl} from 'single-spa';
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 const Step1 = () => (
@@ -12,11 +13,23 @@ const Step2 = () => (
   </div>
 );
 
-const Step3 = () => <div>Final</div>;
+const Step3 = () => (
+  <div>
+    Final
+    <a
+      href="/vistoria"
+      onClick={ev => {
+        ev.preventDefault();
+        navigateToUrl('/vistoria');
+      }}>
+      Vistoria
+    </a>
+  </div>
+);
 
 function App() {
   return (
-    <Router>
+    <Router basename="processamento">
       <h2>Processing</h2>
       <Switch>
         <Route path="/" exact component={Step1} />

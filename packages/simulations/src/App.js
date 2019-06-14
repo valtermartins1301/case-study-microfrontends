@@ -1,4 +1,5 @@
 import React from 'react';
+import {navigateToUrl} from 'single-spa';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
 const Step1 = () => (
@@ -13,11 +14,23 @@ const Step2 = () => (
   </div>
 );
 
-const Step3 = () => <div>Final</div>;
+const Step3 = () => (
+  <div>
+    Final
+    <a
+      href="/processamento"
+      onClick={ev => {
+        ev.preventDefault();
+        navigateToUrl('/processamento');
+      }}>
+      Processamento
+    </a>
+  </div>
+);
 
 function App() {
   return (
-    <Router>
+    <Router basename="simulacao">
       <h2>Simulations</h2>
       <Switch>
         <Route path="/" exact component={Step1} />

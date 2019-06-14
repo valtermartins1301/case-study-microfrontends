@@ -17,7 +17,7 @@ const Step3 = () => <div>Final</div>;
 
 function App() {
   return (
-    <Router>
+    <Router basename="vistoria">
       <h2>Agendar Vistoria</h2>
       <Switch>
         <Route path="/" exact component={Step1} />
