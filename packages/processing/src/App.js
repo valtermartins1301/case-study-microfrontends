@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-
 const Step1 = () => (
   <div>
     Step 1 <Link to="/step2">Next</Link>
@@ -28,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export {App};

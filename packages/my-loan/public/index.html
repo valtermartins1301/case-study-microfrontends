@@ -34,5 +34,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@creditas/header": "http://localhost:8000/index.singlespa.js",
+          "@creditas/simulations": "http://localhost:8001/index.singlespa.js",
+          "@creditas/processing": "http://localhost:8002/index.singlespa.js",
+          "@creditas/inspection": "http://localhost:8003/index.singlespa.js"
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/systemjs@3.1.6/dist/system.js"></script>
+    <script src="https://unpkg.com/systemjs@3.1.6/dist/extras/amd.js"></script>
+    <script src="https://unpkg.com/systemjs@3.1.6/dist/extras/named-exports.js"></script>
   </body>
 </html>

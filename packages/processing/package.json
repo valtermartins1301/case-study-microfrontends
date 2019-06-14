@@ -8,24 +8,29 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "single-spa-react": "^2.10.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/runtime": "^7.4.5",
+    "@creditas/microfrontend-webpack-config": "^1.0.11",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1"
   },
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --env.standalone",
     "start:single-spa": "webpack-dev-server --config ./webpack.config.js --port 8002",
     "build": "webpack -p --config webpack.config.js --env.analyze=static",
     "analyze": "webpack --config webpack.config.js --env.analyze=server"
-
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
