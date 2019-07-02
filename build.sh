@@ -11,4 +11,5 @@ cp -R ./packages/header/build/* ./build/header
 cp -R ./packages/inspection/build/* ./build/inspection 
 cp -R ./packages/processing/build/* ./build/processing 
 cp -R ./packages/simulations/build/* ./build/simulations 
+
 cp ./_redirects ./build/_redirects
