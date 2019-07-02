@@ -38,10 +38,14 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "@creditas/header": "http://localhost:8000/index.singlespa.js",
-          "@creditas/simulations": "http://localhost:8001/index.singlespa.js",
-          "@creditas/processing": "http://localhost:8002/index.singlespa.js",
-          "@creditas/inspection": "http://localhost:8003/index.singlespa.js"
+          "react": "https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.production.min.js",
+          "react-dom": "https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js",
+          "react-dom/server": "https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom-server.browser.production.min.js",
+          "single-spa": "https://unpkg.com/single-spa@4.3.2/lib/umd/single-spa.min.js",
+          "@creditas/header": "/header/index.singlespa.js",
+          "@creditas/simulations": "/simulations/index.singlespa.js",
+          "@creditas/processing": "/processing/index.singlespa.js",
+          "@creditas/inspection": "/inspection/index.singlespa.js"
         }
       }
     </script>
