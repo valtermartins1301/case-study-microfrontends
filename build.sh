@@ -13,3 +13,5 @@ cp -R ./packages/processing/build/* ./build/processing
 cp -R ./packages/simulations/build/* ./build/simulations 
 
 cp ./_redirects ./build/_redirects
+
+echo "Finish"
