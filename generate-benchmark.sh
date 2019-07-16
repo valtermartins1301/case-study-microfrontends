@@ -21,6 +21,7 @@ performance "https://www.amazon.com/ap/register?_encoding=UTF8&openid.assoc_hand
 performance "https://www.netflix.com/signup/regform"
 performance "https://www.facebook.com/"
 performance "https://www.spotify.com/br/signup/"
+performance "https://cursos.alura.com.br/loginForm"
 
 # Sites
 performance "https://www.google.com/"
