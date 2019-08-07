@@ -1,6 +1,11 @@
 import React from 'react';
 import {navigateToUrl} from 'single-spa';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import TagManager from 'react-gtm-module';
+
+const tagManagerArgs = {
+  gtmId: 'GTM-W4JQ9BX',
+};
 
 const Step1 = () => (
   <div>
@@ -29,6 +34,8 @@ const Step3 = () => (
 );
 
 function App() {
+  TagManager.initialize(tagManagerArgs);
+
   return (
     <Router basename="simulacao">
       <h2>Simulations</h2>
