@@ -6,9 +6,7 @@ import TagManager from 'react-gtm-module';
 const tagManagerArgs = {
   gtmId: 'GTM-W4JQ9BX',
   dataLayer: {
-    userId: '001',
-    userProject: 'simulations-module',
-    page: 'simulations',
+    userId: Date.now(),
     app: 'simulations-app',
   },
   dataLayerName: 'SimulationsDataLayer',
@@ -43,7 +41,7 @@ const Step3 = () => (
 function App() {
   React.useEffect(() => {
     TagManager.initialize(tagManagerArgs);
-  });
+  }, []);
 
   return (
     <Router basename="simulacao">
