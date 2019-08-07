@@ -10,6 +10,9 @@ const tagManagerArgs = {
     app: 'simulations-app',
   },
   dataLayerName: 'SimulationsDataLayer',
+  events: {
+    sendUserInfo: 'userInfo',
+  },
 };
 
 const Step1 = () => (
