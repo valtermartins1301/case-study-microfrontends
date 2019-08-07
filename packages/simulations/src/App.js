@@ -11,7 +11,7 @@ const tagManagerArgs = {
     page: 'simulations',
     app: 'simulations-app',
   },
-  dataLayerName: 'simulations',
+  dataLayerName: 'SimulationsDataLayer',
 };
 
 const Step1 = () => (
