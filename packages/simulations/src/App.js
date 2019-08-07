@@ -34,7 +34,9 @@ const Step3 = () => (
 );
 
 function App() {
-  TagManager.initialize(tagManagerArgs);
+  React.useEffect(() => {
+    TagManager.initialize(tagManagerArgs);
+  });
 
   return (
     <Router basename="simulacao">
