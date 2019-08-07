@@ -5,6 +5,13 @@ import TagManager from 'react-gtm-module';
 
 const tagManagerArgs = {
   gtmId: 'GTM-W4JQ9BX',
+  dataLayer: {
+    userId: '001',
+    userProject: 'simulations-module',
+    page: 'simulations',
+    app: 'simulations-app',
+  },
+  dataLayerName: 'simulations',
 };
 
 const Step1 = () => (
