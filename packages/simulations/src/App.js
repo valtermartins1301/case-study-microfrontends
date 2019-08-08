@@ -44,7 +44,8 @@ const Step3 = () => (
 function App() {
   React.useEffect(() => {
     console.log('adiciona gTM');
-    TagManager.initialize(tagManagerArgs);
+    const dt = TagManager.initialize(tagManagerArgs);
+    console.log(dt);
   }, []);
 
   return (
