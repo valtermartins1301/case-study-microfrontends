@@ -26,7 +26,7 @@ const HeaderBrand = styled.h1`
 
 const Header = () => (
   <HeaderWrap>
-    <div>X</div>
+    <div>#</div>
     <HeaderBrand>Creditas</HeaderBrand>
     <div>©</div>
   </HeaderWrap>
