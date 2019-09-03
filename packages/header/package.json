@@ -13,6 +13,7 @@
     "start": "webpack-dev-server --config ./webpack.config.js --env.standalone",
     "start:single-spa": "webpack-dev-server --config ./webpack.config.js --port 8000",
     "build": "webpack -p --config webpack.config.js --env.analyze=static",
+	"postbuild": "sh postbuild.sh",
     "analyze": "webpack --config webpack.config.js --env.analyze=server"
   },
   "eslintConfig": {
