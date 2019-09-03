@@ -9,7 +9,8 @@
   "scripts": {
     "release": "cross-env HUSKY_BYPASS=true lerna publish",
     "build": "lerna run --parallel build",
-    "build:root": "lerna run --scope=my-loan build"
+    "build:root": "lerna run --scope=my-loan build",
+    "build:header": "lerna run --scope=header build"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
